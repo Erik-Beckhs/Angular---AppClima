@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="d-flex justify-content-end">
+                <img src="https://cdn-icons-png.flaticon.com/512/1116/1116453.png" class="w300">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="city" class="form-control">
+            <button [disabled]="!city" (click)="getWeather()" class="btn btn-primary form-control my-4">OBTENER CLIMA  </button>
+            <div class="card" *ngIf="active">
+                <div class="card-body">
+                    <p><span class="fw-bold">Temperatura: </span> {{temperatura}}ºC</p>
+                    <p><span class="fw-bold">Humedad: </span> {{humedad}}%</p>
+                    <p><span class="fw-bold">Tiempo: </span> {{tiempo}}</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

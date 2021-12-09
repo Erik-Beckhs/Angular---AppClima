@@ -1,0 +1,12 @@
+.footer{
+    position:fixed;
+    bottom:15px;
+    left:45%;
+}
+.fondo{
+    background: #7bc2f1;  /* fallback for old browsers */
+}
+
+.w300{
+    width:300px;
+}

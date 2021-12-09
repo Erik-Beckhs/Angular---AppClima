@@ -1,0 +1,9 @@
+.list-group-item{
+    height:50px;
+    cursor:pointer;
+    width:500px;
+}
+.list-group-item:active{
+    opacity:0.7;
+    transform:scale(1.05)
+}
